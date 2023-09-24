@@ -145,18 +145,46 @@
 	.iconlist{ margin:0px; padding:0px; list-style:none; width:90%}
 	.iconlist li{ position:relative; margin-bottom:20px;  font-size:16px; line-height:22px; min-height:82px;display: flex; flex-direction: row; align-items: center; height:80px}
 	.iconlist li img{ position:absolute; width:82px; height:82px; left:0px; top:0px;}
-	.error1{ margin:28px 18px 4px; border:solid 1px #F6A87A; border-radius:5px; width:89%; position:relative}
-	.error1 .error1_inner{ position:relative;  color:#000; font-size:14px; line-height:22px; font-weight:bold; display: flex; flex-direction: row; align-items: center;}
-	.error1 .error1_inner img{ width:35px; height:35px; padding: 6px;}
+	.error1{
+    border: solid 1px #101010;
+    border-radius: 48px;
+    width: 90%;
+    position: relative;
+  height: 21%;}
+	.error1 .error1_inner{ position:relative; padding:9px 0px 8px 0px; color:#000; font-size:14px; line-height:22px; font-weight:bold; padding-left:50px;display: flex; flex-direction: row; align-items: center;}
+	.error1 .error1_inner img{ position: relative;
+    width: 40px;
+    height: 40px;
+    left: -34px;
+    top: 2px;
+    padding: 9px;
+    background: antiquewhite;
+    border-radius: 50%;
+    background-color: #ffcc4d;}
 	.topImgtxt{ background:rgba(0, 0, 0, 0.1); position:absolute; bottom:0px; padding:10px; color:#000;font-size:14px; line-height:22px; font-weight:bold}
 	
 	
-	.content2 .sectionLeft{width: 284px; background:#fff; border-radius:5px;box-shadow: 0px 1px 2px 3px #ccc; overflow:hidden; padding:5px; position:absolute; z-index:999; height:91%; top:3%}
+	.content2 .sectionLeft{width: 287px;
+    background: #fff;
+    /* border-radius: 5px; */
+    /* box-shadow: 0px 1px 2px 3px #ccc; */
+    overflow: hidden;
+     padding: 5px;
+    position: absolute;
+    /* z-index: 999; */
+    height: 87%;
+    top: 6%;}
 	.content2 .sectionRight{width: 770px;left: 284px;}
-	#topImgCnt2{background: url(pages/images/Topic01/T01P12/preterm-septic-infant-small.png) no-repeat  center; background-size:cover;  width:100%; height:100%; top:-2px; right:2.5px; display:block;border-radius:5px}
-	#topImgCnt3{background: url(pages/images/Topic01/T01P12/Blood-culture-small.png) no-repeat  center; background-position-y: -25px;background-size:cover; width:100%; right:2.5px;  height:100%;border-radius:5px}
+	#topImgCnt2{background: url(pages/images/Topic01/T01P12/image22.png) no-repeat  center; background-size:cover;  width:100%; height:100%; top:-2px; right:2.5px; display:block;border-radius:5px}
+	#topImgCnt3{background: url(pages/images/Topic01/T01P12/imageee2.png) no-repeat center;
+    background-position-y: -25px;
+    background-size: cover;
+    width: 100%;
+    right: 2.5px;
+    height: 85%;
+    border-radius: 34px;}
 	.topImgbox1{ position:absolute; top:0px; width:100%; height:222px; top:5px; width:278px}
-	.topImgbox2{ position:absolute; top:0px; width:100%; height:222px; top:235px; width:278px}
+	.topImgbox2{ position:absolute; top:0px; width:100%; height:222px; top: 221px; width:278px}
 	.sectionLeftBox{ position:relative; height:100%; padding:5px;width: 274px;}
 	#topImgCnt2 .small_expand{ top: auto !important;}
 	#imgPopup2 {
@@ -166,7 +194,7 @@
   }
 	#imgPopup3 {background: url(pages/images/Topic01/T01P12/Blood-culture-large.png) no-repeat; background-size:100% 100%;}
 	.topImgboxinner{  border:double 0px #ccc; position:relative; height:100%}
-	.content2 .sectionRight .sectionContentArea{  height: 362px;margin-top: 30px;}
+	.content2 .sectionRight .sectionContentArea{  height: 371px;margin-top: 30px;}
 	.sectionContentAreainner{ width:80%; margin:20px 0px 0px 50px}
 	.sectionContentAreainner .contenttext{font-size:14px; line-height:20px; position:relative}
 	.sectionContentAreainner .contenttext2{ margin-top:30px}
@@ -175,6 +203,16 @@
 	#iconlist_item1, #iconlist_item2, #iconlist_item3, #error1,#topImgbox1, #topImgbox2,#sectionRight2,#contenttext1, #contenttext2,.sectionLeftBox, #error2,#topImgtxt1{visibility:hidden; opacity: 0;}
 	#topImgCnt2 .clickToEnlarge,.clickToEnlarge{ visible:hidden; opacity:0; display:block}
 	.modal.popupimg1 .modalContent{width: 555px; height:auto;top:56px;}
+  #idde2{
+    background: url(pages/images/Topic01/T01P12/image22.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 85%;
+    top: -2px;
+    right: 2.5px;
+    display: block;
+    border-radius: 34px;
+  }
 	.modal.popupimg2 .modalContent{width: 555px; height:auto;top:50px;}
 	.modal.popupimg3 .modalContent{width: 472px; height:auto}
 	.sectionLeftBox .popover{ bottom:8px !important}
@@ -221,24 +259,14 @@ margin-top: 4px;
 						<div class="sectionLeftBox">
 							<div id="topImgbox1" class="topImgbox1">
 								<div class="topImgboxinner">
-									<div class="topImgCnt" id="topImgCnt2">
-										<div class="popover left-arrow clickToEnlarge">
-											<div class="arrow" style="top: 50%;"></div>
-											<div class="popover-content">Click to enlarge image.</div>
+									<div class="topImgCnt" id="idde2">
 										</div>
-										<a href="javascript:void(0);" title="Click to enlarge image" class="small_expand zoom_btn" click_id="2">&nbsp;</a>
-									</div>
 								</div>
 							</div>
 							<div id="topImgbox2" class="topImgbox2">
 								<div class="topImgboxinner">
 									<div class="topImgCnt" id="topImgCnt3">
-										<div class="popover left-arrow clickToEnlarge" style="margin-bottom: 20px;">
-											<div class="arrow" style="top: 50%;"></div>
-											<div class="popover-content">Click to enlarge image.</div>
-										</div>
-										<a style="bottom: 30px;" href="javascript:void(0);" title="Click to enlarge image" class="small_expand zoom_btn" click_id="3">&nbsp;</a>
-									</div>
+											</div>
 								</div>
 							</div>
 						</div>
@@ -248,13 +276,13 @@ margin-top: 4px;
 							
                             <div class="sectionContentArea">
 								<ul class="iconlist">
-									<li id="iconlist_item1" class="iconlist_item1"><img src="pages/images/Topic01/T01P12/defense.svg"> <span class="padding-value"> Infected infants often present with nonspecific signs that are commonly seen with noninfectious conditions such as transient tachypnea of the newborn or TTN, respiratory distress syndrome or  RDS, congenital heart disease, or inborn errors of metabolism.</span></li>
+									<li id="iconlist_item1" class="iconlist_item1"><img src="pages/images/Topic01/T01P12/defense.svg"> <span class="padding-value">Infected infants often present with nonspecific signs that are commonly seen with noninfectious conditions such as transient tachypnea of the newborn, respiratory distress syndrome, congenital heart disease, or inborn errors of metabolism.</span></li>
 									<li id="iconlist_item2" class="iconlist_item2"><img src="pages/images/Topic01/T01P12/infectious.svg"> <span class="padding-value">Neonatal sepsis is rare, yet, the infant’s presentation may be so similar to other illnesses, that clinicians often err on the side of caution because of the devastating effects of delayed treatment of infection.</span></li>
 									<li id="iconlist_item3" class="iconlist_item2"><img src="pages/images/Topic01/T01P12/immune-system.svg"> <span class="padding-value"> Although reduction in the use of unnecessary antibiotics is a national and international goal, it is  common to start antibiotics when neonates have clinical signs of sepsis, while awaiting laboratory testing and resolution of the clinical signs.</span></li>
 								</ul>
 								<div id="error1" class="error1 ">
 									<div class="error1_inner">
-										<img src="pages/images/Topic01/T01P12/warning.svg"> Reduction in use of unnecessary antibiotics is a national and international goal.</div>
+										<img src="pages/images/Topic01/T01P12/warning.svg"> Reduction in the use of unnecessary antibiotics is a national and international goal.</div>
 								</div>
 							</div>
 						</div>
