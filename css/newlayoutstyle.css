@@ -11,17 +11,18 @@ input, textarea {
 
 #id_transcriptBox {
     position: absolute;
-    height: 60px;
+    height: 69px;
     width: 485px;
-    left: 90px;
-    top: 592px;
+    left: 92px;
+    top: 588px;
     font-family: OpenSansRegular;
     background-color: #FFFFFF;
     z-index: 99999;
     overflow: hidden;
     display: block !important;
-    border-radius: 4px;
 }
+
+
 
 #transcriptbar {
     background-color: #005B8A;
@@ -31,6 +32,8 @@ input, textarea {
     z-index: 9999;
     position: relative;
     height: 55.5%;
+    justify-content: center;
+    align-items: center;
 }
 
 #transcripttext {
@@ -41,25 +44,28 @@ input, textarea {
     line-height: 18px;
     padding-right: 4px;
     padding-left: 10px;
-    padding-top: 2px;
+    padding-top: 5px;
     /* padding-bottom: 16px; */
     color: #191919;
     font-family: inherit;
+   
+    border-right: 2px solid rgba(76, 73, 73, 0.685);
+    border-left:2px solid rgba(69, 67, 67, 0.71)
 }
 
 
 /* width */
 
 #transcripttext::-webkit-scrollbar {
-    width: 3px;
+    width: 0px;
 }
 
 #transcripttext::-ms-scrollbar {
-    width: 3px;
+    width: 0px;
 }
 
 #transcripttext::-moz-scrollbar {
-    width: 3px;
+    width: 0px;
 }
 
 
@@ -68,8 +74,8 @@ input, textarea {
 #transcripttext::-webkit-scrollbar-track {
     /* box-shadow: inset 0 0 5px grey; */
   border-radius: 5px;
-    border-block-color: grey;
-    background-color: rgba(65, 65, 65, 0.4);
+  border-block-color: transparent;
+  background-color: transparent;
     /* min-height: 34px; */
     margin: 2px 24px;
    
@@ -77,8 +83,8 @@ input, textarea {
 #transcripttext::-ms-scrollbar-track {
     /* box-shadow: inset 0 0 5px grey; */
     border-radius: 5px;
-    border-block-color: grey;
-    background-color: rgba(65, 65, 65, 0.4);
+    border-block-color: transparent;
+    background-color: transparent;
     /* min-height: 34px; */
     margin: 2px 24px;
    
@@ -87,8 +93,8 @@ input, textarea {
 #transcripttext::-moz-scrollbar-track {
     /* box-shadow: inset 0 0 5px grey; */
     border-radius: 5px;
-    border-block-color: grey;
-    background-color: rgba(65, 65, 65, 0.4);
+    border-block-color: transparent;
+    background-color:transparent;
     /* min-height: 34px; */
     margin: 2px 24px;  
 }
@@ -97,17 +103,17 @@ input, textarea {
 /* Handle */
 
 #transcripttext::-webkit-scrollbar-thumb {
-    background: #545454;
+    background: #f5f4f4;
     border-radius: 5px;
 }
 
 #transcripttext::-ms-scrollbar-thumb {
-    background: #545454;
+    background: transparent;
     border-radius: 5px;
 }
 
 #transcripttext::-moz-scrollbar-thumb {
-    background: #545454;
+    background: transparent;
     border-radius: 5px;
 }
 
@@ -136,89 +142,65 @@ span.tooltip {
     width: 100%;
     left: 0px;
 }
-
 .ClsToolbtn {
-    /* width: 61px;
-    height: 40px; */
     width: 80px;
-    height: 45px;
-    background: url("../media/images/new/resource.svg") no-repeat;
-      background-position-x: 0%;
-      background-position-y: 0%;
-      background-repeat: no-repeat;
+    height: 65px;
+    transition: all 0.2s;
+    z-index: 1;
+    background-size: cover;
+    display: flex;
+}
+/* Apply a slide-down animation to the specified <g> element on hover */
+/* Apply a slide-down animation to the specified <g> element on hover */
+/* Apply a slide-down animation to the specified <g> element on hover */
+/* Apply a slide-down animation to the specified <g> element on hover */
+/* Apply a slide-down animation to the specified <g> element on hover */
+
+
+
+.no-touch .ClsToolbtn {
+    /* Remove background property */
+}
+.ClsToolbtn.svg-res{
+    top:30px;
+}
+
+.no-touch .ClsToolbtn:hover:not(.clsToolDisabled) {
+    width: 80px;
+    height: 65px;
+    cursor: pointer;
     background-position: 0px 0px;
-    transition: all 0.2s;
-    z-index: 1;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-color: #414141;
+   
 }
-
-/* .ClsToolbtn span.ClsToolbtnIcon {
-    position: absolute;
-    height: 31px;
-    width: 32px;
-    top: 10px;
-    left: 20px;
-    background: url("../media/images/new/resource.svg") no-repeat;
-    background-position: 0px 0;
-    transition: all 0.2s;
-    border-radius: 50%;
-    z-index: 1;
-    display: block;
-    background-size: cover;
-} */
-
-.no-touch .ClsToolbtn:hover:not(.clsToolDisabled) span.ClsToolbtnIcon {
-    width: 80px;
-    height: 45px;
-    background: url("../media/images/new/resource-hover.svg") no-repeat;
-      background-position-x: 0%;
-      background-position-y: 0%;
-      background-repeat: no-repeat;
-      background-position: 0px 0px;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.no-touch .ClsToolbtn:hover:not(.clsToolDisabled){
-    width: 80px;
-    height: 45px;
-    background: url("../media/images/new/resource-hover.svg") no-repeat;
-      background-position-x: 0%;
-      background-position-y: 0%;
-      background-repeat: no-repeat;
-      background-position: 0px 0px;
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-/* .ClsToolbtnSelected span.ClsToolbtnIcon {
-    background: url("../media/images/player/common/4x/pinImg.png") no-repeat !important;
-    background-position: -32px 0px !important;
-    background-size: cover !important;
-} */
 
 .ClsToolbtnSelected {
-   
-   
-z-index: 999;
-width: 80px;;
-height: 45px;
-
-    background: url("../media/images/new/resource-hover.svg") no-repeat;
-    background-position: 0px 0px;
+    z-index: 999;
+    width: 80px;
+    height: 45px;
     cursor: pointer;
+    background-position: 0px 0px;
     background-size: cover;
-  
-}
-
-.ClsToolbtnSelected span.ClsToolbtnIcon {
-    /* top: 25px; */
 }
 
 .ClsToolbtnSelected span.tooltip {
     top: 54px;
 }
+
+/* If you need to style the icon within .ClsToolbtnSelected, you can use the following selector */
+.ClsToolbtnSelected svg {
+    /* Your styles for the SVG element within .ClsToolbtnSelected */
+    fill: #f2eeee; /* Example fill color */
+    stroke: #f5eded; /* Example stroke color */
+}
+
+/* Add this CSS to change the color of the SVG to white on hover */
+.no-touch .ClsToolbtn:hover:not(.clsToolDisabled) svg {
+    filter: brightness(0) invert(1);
+}
+
+
 
 .whitepatch {
     background: #ffffff;
@@ -231,43 +213,66 @@ height: 45px;
     left: 12px;
 }
 
-#clsHelpBtn {  
-    width: 85px;
-    height: 45px;
-    z-index: 100000;
-    background: url("../media/images/new/navigation.svg") no-repeat;
-      background-position-x: 0%;
-      background-position-y: 0%;
-      background-repeat: no-repeat;
+#clsHelpBtn {
+    width: 80px;
+    height: 65px;
     transition: all 0.2s;
-    background-position: center center;
-    cursor: pointer;
-    background-repeat: no-repeat;
+    z-index: 1;
+    background-size: cover;
+    display: flex!important;
 }
 
-.no-touch #clsHelpBtn:hover:not(.clsHelpBtnDis),
-.no-touch #clsHelpBtn:hover:not(.active),
-.no-touch #clsHelpBtn.active {
-    width: 85px;
-    height: 45px;
-    z-index: 100000;
-    background: url("../media/images/new/navigation-hover.svg") no-repeat;
-      background-position-x: 0%;
-      background-position-y: 0%;
-      background-repeat: no-repeat;
-    background-position: center center;
+.no-touch #clsHelpBtn:hover:not(.clsToolDisabled) {
+    width: 80px;
+    height: 65px;
     cursor: pointer;
-    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: contain;
+    background-color: #414141;
+   
+}
+.no-touch #clsHelpBtn:hover:not(.clsHelpBtnDis) svg {
+    filter: brightness(0) invert(1);
+}
+#clsHelpBtn.svg-nav{
+top: 30px!important;;
 }
 
-#clsHelpBtn span.tooltip {
-    top: 27px;
+#clsExitBtn {
+    width: 80px;
+    height: 65px;
+    transition: all 0.2s;
+    z-index: 1;
+    background-size: cover;
+    display: flex!important;
+  
+}
+.no-touch #clsExitBtn:hover:not(.clsExitBtnDis) svg {
+    filter: brightness(0) invert(1);
+}
+#clsExitBtn.svg-exit{
+top: 10px!important;;
+}
+
+.no-touch #clsExitBtn:hover {
+  
+    width: 80px;
+    height: 65px;
+    cursor: pointer;
+    background-position: 0px 0px;
+    background-size: contain;
+    background-color: #414141;
+}
+
+#clsExitBtn span {
+    font-size: 12px;
     color: #ffffff;
-}
-
-.clsHelpBtnDis {
-    opacity: 0.5 !important;
-    cursor: default !important;
+    display: block;
+    position: absolute;
+    top: 28px;
+    text-align: center;
+    width: 101px;
+    left: -36px;
 }
 .PlayerRectangle
     {
@@ -285,22 +290,22 @@ height: 45px;
     flex-wrap: nowrap;
 }
 #course-Icon{      
-    width: 190px;
-    height: 51px;
+    width: 147px;
+    height: 38px;
     background: url(../media/images/new/Stable-Icon.png) no-repeat;
-    background-position: 0px 0px;   
+    background-position: 0px 0px;
     z-index: 1;
-    background-size: cover;
+    background-size: contain;
 }
-.lineClassforheader{
+.lineClassforheader {
     /* border: 2px solid #414141; */
     background-color: #414141;
-    height: 35px;
+    height: 50px;
     width: 3px;
-    margin-left: 18px;
+    margin-left: -5px;
     margin-right: 18px;
-    border-radius: 50px;
-  }
+    border-radius: -8px;
+}
 .headClass {
     clear: both;
     float: left;
@@ -538,7 +543,7 @@ background-size: cover;
 }
 
 #btmFrame {
-    background: rgba(213, 213, 213, 1);
+    background: rgb(255, 255, 255);
     width: 1085px;
     display: block;
     position: absolute;
@@ -546,8 +551,9 @@ background-size: cover;
     bottom: 0px;
     left: 0px;
     z-index: 9999;
-    box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.16);
+    /* box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.16); */
 opacity: 1;
+border-top: 2px solid rgba(50, 50, 50, 0.511);
 }
 
 #clsBackBtn {
@@ -555,24 +561,75 @@ opacity: 1;
     top: 18px;
     right: 112px;
     width: 35px;
-    height: 35px;
+    height: 55px;
+  
+
+}
+#clsBackBtn:hover {
+    position: absolute;
+    top: 1px;
+    right: 112px;
+    width: 50px;
+    height: 70px;
+    background-color: #05222e;
+    display: flex;
+    justify-content: center!important;
+    align-items: center!important;
+    -webkit-text-fill-color: #cccdd1;
+
 }
 
-.clsDisBackBtn span.clsBackBtnIcon {
+
+#clsBackBtn.clsDisBackBtn span.clsBackBtnIcon {
     /* background: url("../media/images/new/back-btn.svg") no-repeat; */
-    opacity: 0.5;
+    opacity: 1;
     cursor: default;
     background-position: 0px 0;
     width: 35px;
     height: 35px;
-    transition: all 0.2s;
-    z-index: 5;  
+    z-index: 5;
     position: absolute;
     top: 0px;
-    left: 0px;    
+    left: 0px;
     background-size: cover;
 }
 
+#clsBackBtn:hover.clsDisBackBtn span.clsBackBtnIcon {
+    /* background: url("../media/images/new/back-btn.svg") no-repeat; */
+    opacity: 1;
+    cursor: default;
+    background-position: 0px 0;
+    width: 35px;
+    height: 35px;
+    z-index: 5;
+    position: absolute;
+    top: 9px;
+    left: 4px;
+    background-size: cover;
+}
+#clsBackBtn:hover.clsEnaBackBtn span.clsBackBtnIcon {
+    cursor: pointer;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-position: 0px 0;
+    width: 35px;
+    height: 35px;
+   
+    z-index: 5;
+    position: absolute;
+    display: block;
+    top: 7px;
+    left: 4px;
+    background-size: cover;
+    fill: rgb(171, 21, 21); /* Change the fill color to white on hover */
+}
+#clsBackBtn:hover #HoverBack path {
+    fill: rgb(236, 229, 229);
+}
+#clsBackBtn:hover #arrowGroup path{
+    fill:rgb(241, 237, 237);
+}
 .clsEnaBackBtn span.clsBackBtnIcon {
     cursor: pointer;
     /* background: url("../media/images/new/back-btn.svg") no-repeat; */
@@ -582,7 +639,7 @@ opacity: 1;
     background-position: 0px 0;
     width: 35px;
     height: 35px;
-    transition: all 0.2s;
+ 
     z-index: 5;
     position: absolute;
     top: 0px;
@@ -623,6 +680,7 @@ opacity: 1;
     align-content: center;
     padding-top: 4px;
 }
+
 /* Next Button */
 
 
@@ -636,13 +694,97 @@ opacity: 1;
     height: 35px;
 }
 
+#clsNxtBtn:hover {
+    position: absolute;
+    top: 1px;
+    right: 2px;
+    width: 55px;
+    
+    height: 70px;
+    background-color: #05222e;
+    display: flex;
+    justify-content: center!important;
+    align-items: center!important;
+   
+
+}
+
+
+#clsNxtBtn.clsEnaNxtBtn span.clsNxtBtnIcon {
+    /* background: url("../media/images/new/back-btn.svg") no-repeat; */
+    opacity: 1;
+    cursor: default;
+    background-position: 0px 0;
+    width: 35px;
+    height: 35px;
+   
+    z-index: 5;  
+    position: absolute;
+    top: 0px;
+    left: 0px;    
+    background-size: cover;
+}
+#clsNxtBtn.clsEnaNxtBtn span.clsNxtBtnIcon {
+    /* background: url("../media/images/new/back-btn.svg") no-repeat; */
+    opacity: 1;
+    cursor: default;
+    background-position: 0px 0;
+    width: 35px;
+    height: 35px;
+   
+    z-index: 5;  
+    position: absolute;
+    top: 0px;
+    left: 0px;    
+    background-size: cover;
+}
+#clsNxtBtn:hover.clsEnaNxtBtn span.clsNxtBtnIcon {
+    cursor: pointer;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-position: 0px 0;
+    width: 35px;
+    height: 35px;
+   
+    z-index: 5;
+    position: absolute;
+    display: block;
+    top: 15px;
+    left: 7px;
+    background-size: cover;
+     /* Change the fill color to white on hover */
+}
+#clsNxtBtn:hover.clsEnaNxtBtn span.clsNxtBtnIcon {
+    cursor: pointer;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-position: 0px 0;
+    width: 35px;
+    height: 35px;
+   
+    z-index: 5;
+    position: absolute;
+    display: block;
+    top: 15px;
+    left: 7px;
+    background-size: cover;
+     /* Change the fill color to white on hover */
+}
+#clsNxtBtn:hover #HoverNext path {
+    fill: rgba(225, 221, 221, 0.799);
+}
+#clsNxtBtn:hover #arrowGroupNext path{
+    fill:rgb(211, 207, 207);
+}
+
 .clsEnaNxtBtn span.clsNxtBtnIcon {
     /* background: url("../media/images/new/next-btn.svg") no-repeat; */
     background-position: 0px 0;
     cursor: pointer;
     width: 35px;
-height: 35px;
-    transition: all 0.3s;
+    height: 35px;
     z-index: 5;  
     position: absolute;
     top: 0px;
@@ -658,11 +800,27 @@ height: 35px;
     background-position: 0px 0;
     width: 35px;
     height: 35px;
-    transition: all 0.3s; 
+   
     z-index: 5;
     position: absolute;
     top: 0px;
     left:0px;
+    display: block;
+    background-size: cover;
+}
+
+#clsNxtBtn:hover.clsDisNxtBtn span.clsNxtBtnIcon {
+    /* background: url("../media/images/new/next-btn.svg") no-repeat; */
+    opacity: 0.5;
+    cursor: default;
+    background-position: 0px 0;
+    width: 35px;
+    height: 35px;
+   
+    z-index: 5;
+    position: absolute;
+    top: 15px;
+    left: 7px;
     display: block;
     background-size: cover;
 }
@@ -810,34 +968,65 @@ height: 35px;
     border: 2px solid #414141;
     border-radius: 15px;
     box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
-}
-#clsMnuBtn {
+}#clsMnuBtn {
     position: absolute;
     width: 42px;
-    height: 42px;
-    left: 25px;
-    top: 606px;
-    background: url("../media/images/new/menubtn.svg") no-repeat;
-    background-position: 0px 0px;
+    height: 100px;
+    left: 20px;
+    top: 587px;
     transition: all 0.2s;
     z-index: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.no-touch #clsMnuBtn:hover:not(.clsMnuBtnDis) {
-    position: absolute;
+
+#clsMnuBtn:hover {
+    background-color: #05222e; 
     width: 42px;
-    height: 42px;
-    left: 25px;
-    top: 606px;
-    background: url("../media/images/new/menubtn-hover.svg") no-repeat;
-    background-position: 0px 0px;
-    cursor: pointer;
-    z-index: 1;
+    height: 100px;
+    top:587px;
+    padding:10px;
+    left:20px
+
+}
+#clsMnuBtn .menu-svg {
+    position: absolute;
+    max-width: 50%; /* Adjust this value as needed */
+    max-height: 70%; 
+    left:15px;
+    top:15px;
+
 }
 
-.no-touch #clsMnuBtn:hover:not(.clsMnuBtnDis) span {
-    color: rgb(0, 0, 0,1);
-font-weight: 700;
+#clsMnuBtn:hover svg .st01 {
+    stroke: white; /* Change the stroke color to white on hover */
+}
+
+#clsMnuBtn:hover svg .st1 {
+    fill: white; /* Change the fill color to white on hover */
+}
+
+#clsMnuBtn span {
+    display: none; /* Hide the tooltip by default */
+}
+
+#clsMnuBtn:hover span {
+    display: block; /* Display the tooltip on hover */
+    color: rgb(242, 238, 238);
+    font-weight: 700;
+}
+#Component_16_69 {
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Define the animation when it's in the hover state */
+#clsMnuBtn:hover #Component_16_69 {
+    transform: translateY(10%);
 }
 
 .activMenu {
@@ -846,52 +1035,24 @@ font-weight: 700;
     height: 40px;
     left: 37px;
     top: 610px;
-    background: url("../media/images/new/menubtn-hover.svg") no-repeat !important;
-    background-position: 0px 0px !important;
-    /* border-bottom: 4px solid #0090dd;*/
+
+    /* Apply the fill color change to the SVG */
+    fill: white;
+    
+    /* Apply text color and font-weight */
+    color: rgb(242, 238, 238);
+    font-weight: 700;
 }
+
 
 .deactivMenu {
-    /*border-bottom: 0px solid #0090dd;*/
+    /* border-bottom: 0px solid #0090dd; */
 }
 
-#clsMnuBtn span {
-    font-size: 12px;
-    color: rgb(51, 46, 46);
-    display: block;
-    position: absolute;
-    top: 31px;
-    text-align: center;
-    width: 100%;
-    left: 0px;
-}
 
-.activMenu span {
-    color: rgb(0, 0, 0,1);
-    font-weight: 700;
-    
-}
 
-.ClsToolPop {
-    position: absolute;
-    height: 63px;
-    bottom: 66px;
-    width: 238px;
-    left: 663px;
-    font-family: ArialRegular;
-    background-color: #fff;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    transform: translateY(100%);
-    transition: transform 0.5s;
-    top: 530px;
-    z-index: 1000;
-    webkit-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.75);
-}
+
+
 
 #clsVideoRefBtn {
     position: absolute;
@@ -1073,45 +1234,7 @@ span.cIcons {
     transition: all 0.2s;
 }
 
-#clsExitBtn {
-    width: 85px;
-    height: 45px;
-    cursor: pointer;
-    background: url(../media/images/new/Exit.svg) 0% 0% no-repeat;
-      background-position-x: 0%;
-      background-position-y: 0%;
-      background-repeat: no-repeat;
-    transition: all 0.2s;
-    z-index: 1;
-    background-position: center center;
-    background-repeat: no-repeat;
-  
-}
 
-
-#clsExitBtn:hover {
-    width: 85px;
-    height: 45px;
-    cursor: pointer;
-    background: url(../media/images/new/Exit-hover.svg) 0% 0% no-repeat;
-      background-position-x: 0%;
-      background-position-y: 0%;
-      background-repeat: no-repeat;
-    background-position: center center;
-    background-repeat: no-repeat;
-  
-}
-
-#clsExitBtn span {
-    font-size: 12px;
-    color: #ffffff;
-    display: block;
-    position: absolute;
-    top: 28px;
-    text-align: center;
-    width: 101px;
-    left: -36px;
-}
 
 #spnTopicTitleTxt {
     width: 100%;
@@ -1255,157 +1378,12 @@ span.cIcons {
 } */
 
 .glossarytag {
-    color: #F6A87A;
-    text-decoration: underline;
+    color: #21201f;
+    text-decoration: none;
     cursor: pointer;
-}
-
-sub {
-    font-size: 12px;
-}
-
-span.instructions {
-    font-style: italic;
-    color: #4D667B;
-    font-family: OpenSansRegular !important;
-    font-size: 16px !important;
-    font-weight: normal !important;
-}
-
-.bluecolor {
-    color: #4D667B;
-}
-
-.instructions {
-    font-style: italic;
-    color: #4D667B;
-    font-family: OpenSansRegular !important;
-    font-size: 16px !important;
-    font-weight: normal !important;
-}
-
-.secondSectionIntro {
-    font-size: 16px !important;
-    font-family: OpenSansRegular !important;
-}
-
-.assementDesc span {
-    font-size: 16px !important;
-    font-family: OpenSansRegular;
-}
-
-.clickview_text {
-    color: #4D667B;
-    font-size: 12px;
-    font-style: italic;
-    font-family: OpenSansRegular;
-    background: url(../pages/images/Topic01/T01P02/enlarge_text.png);
-    height: 58px;
-    width: 194px;
-    height: 42px;
-    background-size: cover;
-    line-height: 44px;
-    /* text-align: center; */
-    background-position: -2px -2px;
-    position: absolute;
-    left: 7px;
-    top: 3px;
-    padding-left: 11px;
-}
-
-.clickview_icon {
-    background: url(../media/images/new/clickview_more.svg);
-    background-position: 0px 0px;
-    background-position: 0px 0px;
-  width: 45px;
-  height: 45px;
-  display: block;
-  position: absolute;
-  right: 13px;
-  background-size: cover;
-  top: -2px;
-  cursor: pointer;
-  outline: none;
-  text-decoration: none;
-}
-
-	.clickview_icon:hover{width: 45px;background-position: -48.1px 0px;}
-
-.instructionText {
-    color: #4D667B !important;
-    font-weight: normal;
-}
-
-.clickview_caseinfo {
-    position: relative;
-    top: -36px;
-    width: 100%;
-    height: 50px;
-}
-
-.yellowclr {
-    color: #D7722C;
-    font-weight: bold !important;
-}
-
-.g-case-info {
-    top: -53px;
-}
-
-.feedbackBoxCnt {
-    position: absolute;
-    right: 40px;
-    top: 0px;
-    display: none;
-}
-
-.first {
-    right: 67px;
-}
-
-.feedback_icon {
-    background: url("../pages/images/Topic01/T01P56/feedback_icon.png") no-repeat;
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -24px;
-    left: initial;
-    display: none;
-    /* top: 0; */
-    cursor: pointer;
-}
-
-.feedbackTxt {
-    display: block !important;
-}
-
-.smallArrowFeedback {
-    background: url("../media/images/new/clicktoconsole2.png") no-repeat;
-    position: absolute;
-    width: 159px;
-    height: 73px;
-    left: 0px;
-    display: block;
-    top: 0;
-    cursor: pointer;
-    color: #4D667B;
-    font-size: 16px;
-    text-align: center;
-    line-height: 35px;
-}
-
-.arrowFeedback {
-    background: url("../media/images/new/clicktoconsole.png") no-repeat;
-    position: absolute;
-    width: 196px;
-    height: 38px;
-    left: 0px;
-    display: block;
-    top: 0;
-    cursor: pointer;
-    color: #4D667B;
-    font-size: 16px;
-    text-align: center;
+    font-weight: bold;
+r: pointer;
+-align: center;
     line-height: 35px;
 }
 
